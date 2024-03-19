@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/gantt.css">
+    <title>Gantt</title>
+</head>
+<body>
+    <div class="input-output-grid">
+        <div class="input-grid">
+
+            <div class="user-input-grid">
+                <div class="input-labels">
+                    <div>Project Task</div>
+                    <div>Start Date</div>
+                    <div>Due Date</div>
+                    <div> Add/Delete</div>
+                </div>
+                <div class="input-containers">
+                    <input placeholder="Enter Task" class="js-task-input task-input">
+                    <input type="date" class="js-start-date-input start-date-input">
+                    <input type="date" class="js-due-date-input due-date-input">
+                    <button onclick="
+                        addTask()
+                        " class="add-button">Add
+                    </button>
+                </div>
+                
+            </div>
+
+            <div class="js-html-output html-output"></div>
+        </div>
+        <div class="output-grid">
+            <div class="gantt-text-holder">
+                <div class="gantt-title">Schedule Manager: Gantt Chart</div>
+                <div class="gantt-text">The chart provides a visualisation of the tasks based on the urgency and duration. The topmost task is the most urgent</div>
+            </div>
+            <div class="js-gantt-chart gantt-chart">
+                <canvas id="ganttChartCanvas"></canvas>
+            </div>            
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/static/gantt.js"></script>
+
+</body>
+</html>

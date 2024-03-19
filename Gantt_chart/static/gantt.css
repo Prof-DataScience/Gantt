@@ -1,0 +1,131 @@
+body {
+    font-family: Arial;
+    font-size: 15px;
+    background-color: black;
+    margin-right: 10px;
+  
+}
+.input-output-grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    column-gap: 30px;
+}
+
+
+.input-grid {
+    margin-top: 30px;
+}
+
+.user-input-grid {
+    background-color: transparent;
+    height: 60px;
+    font-family: Arial;
+    font-size: medium;
+}
+.input-labels,
+.input-containers,
+.html-output {
+    display: grid;
+    grid-template-columns: 200px 150px 150px 100px;
+    column-gap: 10px;
+    row-gap: 5px;
+    color: aliceblue;
+}
+
+.task-input,
+.start-date-input,
+.due-date-input {
+    border-radius: 3px;
+    background-color: whitesmoke;
+    border: 5px;
+    border-color: whitesmoke;
+    font-size: large;
+}
+.html-output {
+    margin-top: 30px;
+    height: fit-content;
+    font-size: medium;
+}
+
+.input-labels {
+    padding-left: 3px;
+    margin-bottom: 5px;
+}
+
+/* Add button styles */
+.add-button {
+    color: white;
+    background-color: rgba(12, 241, 12, 0.623);
+    border: none;
+    border-radius: 3px;
+    padding: 10px 25px;
+    font-size: large;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+}
+
+.add-button:hover {
+    background-color: rgba(12, 241, 12, 1); /* Reduced alpha on hover */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Grayish shadow on hover */
+}
+
+/* Delete button styles */
+.delete-task-button {
+    color: white;
+    font-size: large;
+    background-color: rgba(255, 99, 132, 0.8);
+    border: none;
+    border-radius: 3px;
+    padding: 5px 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+}
+
+.delete-task-button:hover {
+    background-color: rgba(255, 99, 132, 1); /* Reduced alpha on hover */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Grayish shadow on hover */
+}
+
+.task-output,
+.start-date-output,
+.due-date-output {
+    color: white;
+    padding-top: 6px;
+}
+
+.output-grid {
+    row-gap: 5px;
+    height: 600px;
+    margin-right: 10px;
+}
+.gantt-text-holder {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    margin-bottom: 50px;
+}
+.gantt-title {
+    width: 100%;
+    height: 30px;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 6px;
+    padding: 5px 10px;
+}
+.gantt-text {
+    font-size: medium;
+    color: white;
+}
+
+.gantt-chart {
+    width: 100%;
+    height: auto; /* Set height to auto for dynamic expansion */
+    background-color: aliceblue;
+    border-radius: 5px;
+    margin-top: 30px;
+    overflow: hidden; /* Hide overflow if needed */
+}
+
+.gantt-chart canvas {
+    width: 100%;
+}
